@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказы услуг - Мини-отель</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="../../login.html" class="header-logo">Мини-отель</a>
+            <div class="nav">
+                <a href="../hotel-service.html">Назад</a>
+                <a href="../../login.html">Выход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Заказы услуг отеля</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>№ Заказа</th>
+                    <th>Услуга</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Завтрак в номер</td>
+                    <td>
+                        <select class="status-select">
+                            <option value="preparing">Готовится</option>
+                            <option value="in-progress">В работе</option>
+                            <option value="ready">Готов</option>
+                            <option value="delivered">Доставлен</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Ужин в номер</td>
+                    <td>
+                        <select class="status-select">
+                            <option value="preparing">Готовится</option>
+                            <option value="in-progress">В работе</option>
+                            <option value="ready">Готов</option>
+                            <option value="delivered">Доставлен</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Трансфер в аэропорт</td>
+                    <td>
+                        <select class="status-select">
+                            <option value="accepted">Принят</option>
+                            <option value="in-progress">В работе</option>
+                            <option value="completed">Завершен</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Мини-отель. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html> 

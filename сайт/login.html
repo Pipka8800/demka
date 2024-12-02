@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация - Мини-отель</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="login.html" class="header-logo">Мини-отель</a>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <h1>Вход в систему</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Роль:</label>
+                <select id="role" name="role" required>
+                    <option value="manager">Менеджер</option>
+                    <option value="service">Сотрудник обслуживания номеров</option>
+                    <option value="hotel">Сотрудник предоставления услуг отеля</option>
+                </select>
+            </div>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Мини-отель. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html> 

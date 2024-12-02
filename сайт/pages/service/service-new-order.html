@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Новый заказ - Мини-отель</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="../../login.html" class="header-logo">Мини-отель</a>
+            <div class="nav">
+                <a href="../service.html">Назад</a>
+                <a href="../../login.html">Выход</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Создание нового заказа</h1>
+        <form>
+            <div class="form-group">
+                <label for="room-number">Номер комнаты:</label>
+                <input type="text" id="room-number" name="room-number" required>
+            </div>
+            <div class="form-group">
+                <label for="clients">Количество клиентов:</label>
+                <input type="number" id="clients" name="clients" required>
+            </div>
+            <div class="form-group">
+                <label for="services">Услуги:</label>
+                <input type="text" id="services" name="services" required>
+            </div>
+            <button type="submit">Создать заказ</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Мини-отель. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html> 

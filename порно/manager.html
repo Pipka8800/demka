@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель менеджера - Мини-отель</title>
+    <link rel="stylesheet" href="styles/manager.css">
+</head>
+<body>
+    <header>
+        <h1>Мини-отель</h1>
+        <p>Менеджер: Смирнова Анна Владимировна</p>
+    </header>
+
+    <div class="main-content">
+        <!-- Радио-кнопки для переключения -->
+        <input type="radio" name="tabs" id="tab1" class="tab-radio" checked>
+        <input type="radio" name="tabs" id="tab2" class="tab-radio">
+        <input type="radio" name="tabs" id="tab3" class="tab-radio">
+
+        <!-- Меню с кнопками -->
+        <div class="menu">
+            <label for="tab1" class="tab-label">Сотрудники</label>
+            <label for="tab2" class="tab-label">Заказы</label>
+            <label for="tab3" class="tab-label">Смены</label>
+        </div>
+
+        <!-- Контент вкладок -->
+        <div id="content1" class="tab-content">
+            <h2>Управление сотрудниками</h2>
+            <button onclick="showNewEmployeeForm()">Добавить сотрудника</button>
+            <table>
+                <tr>
+                    <th>ФИО</th>
+                    <th>Должность</th>
+                    <th>Логин</th>
+                    <th>Статус</th>
+                    <th>Действия</th>
+                </tr>
+                <tr>
+                    <td>Петрова Мария Сергеевна</td>
+                    <td>Администратор</td>
+                    <td>petrova_m</td>
+                    <td>Активен</td>
+                    <td>
+                        <button class="danger-button">Уволить</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Козлов Дмитрий Александрович</td>
+                    <td>Горничная</td>
+                    <td>kozlov_d</td>
+                    <td>Активен</td>
+                    <td>
+                        <button class="danger-button">Уволить</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Соколова Елена Павловна</td>
+                    <td>Горничная</td>
+                    <td>sokolova_e</td>
+                    <td>Активен</td>
+                    <td>
+                        <button class="danger-button">Уволить</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="content2" class="tab-content">
+            <h2>Текущие заказы</h2>
+            <table>
+                <tr>
+                    <th>Номер заказа</th>
+                    <th>Дата и время</th>
+                    <th>Номер комнаты</th>
+                    <th>Услуга</th>
+                    <th>Статус</th>
+                    <th>Сотрудник</th>
+                </tr>
+                <tr>
+                    <td>A-123</td>
+                    <td>15.03.2024 10:30</td>
+                    <td>204</td>
+                    <td>Уборка номера</td>
+                    <td>В процессе</td>
+                    <td>Козлов Д.А.</td>
+                </tr>
+                <tr>
+                    <td>A-124</td>
+                    <td>15.03.2024 11:00</td>
+                    <td>301</td>
+                    <td>Замена полотенец</td>
+                    <td>Ожидает</td>
+                    <td>Соколова Е.П.</td>
+                </tr>
+                <tr>
+                    <td>A-125</td>
+                    <td>15.03.2024 11:30</td>
+                    <td>105</td>
+                    <td>Доставка еды</td>
+                    <td>Выполнен</td>
+                    <td>Петрова М.С.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="content3" class="tab-content">
+            <h2>Расписание смен</h2>
+            <button onclick="showNewShiftForm()">Создать смену</button>
+            <table>
+                <tr>
+                    <th>Дата</th>
+                    <th>Время</th>
+                    <th>Сотрудники</th>
+                    <th>Действия</th>
+                </tr>
+                <tr>
+                    <td>15.03.2024</td>
+                    <td>08:00 - 20:00</td>
+                    <td>
+                        <ul>
+                            <li>Петрова М.С. (Администратор)</li>
+                            <li>Козлов Д.А. (Горничная)</li>
+                        </ul>
+                    </td>
+                    <td><button>Редактировать</button></td>
+                </tr>
+                <tr>
+                    <td>16.03.2024</td>
+                    <td>08:00 - 20:00</td>
+                    <td>
+                        <ul>
+                            <li>Петрова М.С. (Администратор)</li>
+                            <li>Соколова Е.П. (Горничная)</li>
+                        </ul>
+                    </td>
+                    <td><button>Редактировать</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 
